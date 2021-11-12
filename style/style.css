@@ -11,6 +11,13 @@ body{
     margin-bottom: 50px;
 }
 
+.clearfix::after{
+    display: table;
+    CONTENT:'';
+    CLEAR: BOTH;
+}
+
+/* structure */
 .container{
     width: 1000px;
     display: inline-block;
@@ -20,25 +27,20 @@ body{
 .container.clearfix{
     margin-top: 0;
 }
-.clearfix::after{
-    display: table;
-    CONTENT:'';
-    CLEAR: BOTH;
-}
 
-.block-violet{
+.page-header{
     width: 100%;
     height: 150px;  
     background-color:#e579e6;
 }
 
-.block-yellow{
+.spotlight{
     width: 100%;
     height: 500px;
     background-color: #e1d67a;
 
 }
-.header-blue{
+.header-box{
     width: 100%;
     height: 70px;
     background-color: #abcfe7;
